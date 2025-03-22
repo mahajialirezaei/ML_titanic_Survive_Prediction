@@ -139,11 +139,3 @@ Thanks to the open data provided by Kaggle and the open-source ML community for 
 
 ```
 
----
-
-Would you like me to:
-- Generate the `requirements.txt`?
-- Add badges (e.g., Python version, license)?
-- Help format the notebook before publishing?
-
-Let me know — I’m happy to help polish the repo!
