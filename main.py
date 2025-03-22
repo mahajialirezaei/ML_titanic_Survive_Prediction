@@ -37,3 +37,22 @@ lin_model.fit(x_train, y_train, epochs=25, batch_size=32, validation_split=0.2)
 loss, accuracy = lin_model.evaluate(x_test, y_test)
 
 print("accuracy:", accuracy)
+
+LNN_model = tf.keras.Sequential([
+    tf.keras.layers.Dense(32, activation='relu', input_shape=(x_train.shape[1],)),
+    tf.keras.layers.Dense(16, activation='relu'),
+    tf.keras.layers.Dense(1, activation='sigmoid'),
+])
+
+LNN_model.compile(
+   optimizer='adam',
+    loss='binary_crossentropy',
+    metrics=['accuracy']
+)
+
+LNN_model.fit(x_train, y_train, epochs=25, batch_size=32, validation_split=0.2)
+
+
+loss_LNN, accuracy_LNN = LNN_model.evaluate(x_test, y_test)
+
+print('LNN_accuracy:', accuracy_LNN)
