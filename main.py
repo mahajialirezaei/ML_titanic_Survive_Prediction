@@ -10,3 +10,4 @@ tit_df = pd.read_csv('titanic.csv')
 CATEGORICAL_COLS = ['Sex', 'Pclass', 'Embarked', 'SibSp', 'Parch']
 NUMERIC_COLS = ['Age', 'Parch']
 
+tit_df.dropna(subset=['Survive', 'Age', 'Fare', 'Embarked'], inplace=True)
