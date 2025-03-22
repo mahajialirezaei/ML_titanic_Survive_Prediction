@@ -10,9 +10,9 @@ tit_df = pd.read_csv('titanic.csv')
 CATEGORICAL_COLS = ['Sex', 'Pclass', 'Embarked', 'SibSp', 'Parch']
 NUMERIC_COLS = ['Age', 'Parch']
 
-tit_df.dropna(subset=['Survive', 'Age', 'Fare', 'Embarked'], inplace=True)
+tit_df.dropna(subset=['Survived', 'Age', 'Fare', 'Embarked'], inplace=True)
 
-y = tit_df['Survive']
+y = tit_df['Survived']
 x = pd.get_dummies(tit_df[CATEGORICAL_COLS + NUMERIC_COLS])
 sc = StandardScaler()
 
@@ -29,7 +29,11 @@ lin_model = tf.keras.Sequential([
 lin_model.compile(
    optimizer='adam',
     loss='binary_crossentropy',
-    matrics='accuracy'
+    metrics=['accuracy']
 )
 
 lin_model.fit(x_train, y_train, epochs=25, batch_size=32, validation_split=0.2)
+
+loss, accuracy = lin_model.evaluate(x_test, y_test)
+
+print("accuracy:", accuracy)
