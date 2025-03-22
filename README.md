@@ -1,4 +1,5 @@
-```markdown
+---
+
 # Titanic Survival Prediction 🚢 | Machine Learning Project
 
 This project presents a complete pipeline for predicting survival on the Titanic using machine learning models. It is part of a classic Kaggle competition: [Titanic - Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic).
@@ -7,11 +8,9 @@ This project presents a complete pipeline for predicting survival on the Titanic
 
 The goal is to build a predictive model that answers the question: *"What sorts of people were more likely to survive?"* using passenger data (like age, sex, class, etc).
 
----
 
 ## 📁 Project Structure
 
-```
 ML_titanic_Survive_Prediction/
 │
 ├── Titanic.ipynb             # Main Jupyter Notebook with code and analysis
@@ -19,9 +18,7 @@ ML_titanic_Survive_Prediction/
 ├── test.csv                  # Test dataset (from Kaggle)
 ├── train.csv                 # Training dataset (from Kaggle)
 └── README.md                 # Project documentation
-```
 
----
 
 ## 🔍 Workflow Overview
 
