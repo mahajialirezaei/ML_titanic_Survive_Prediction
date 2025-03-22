@@ -1,5 +1,4 @@
----
-
+```markdown
 # Titanic Survival Prediction 🚢 | Machine Learning Project
 
 This project presents a complete pipeline for predicting survival on the Titanic using machine learning models. It is part of a classic Kaggle competition: [Titanic - Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic).
@@ -8,17 +7,15 @@ This project presents a complete pipeline for predicting survival on the Titanic
 
 The goal is to build a predictive model that answers the question: *"What sorts of people were more likely to survive?"* using passenger data (like age, sex, class, etc).
 
-
 ## 📁 Project Structure
 
 ML_titanic_Survive_Prediction/
 │
-├── Titanic.ipynb             # Main Jupyter Notebook with code and analysis
-├── gender_submission.csv     # Sample submission file (from Kaggle)
-├── test.csv                  # Test dataset (from Kaggle)
-├── train.csv                 # Training dataset (from Kaggle)
+├── Titanic.ipynb             # Main Jupyter Notebook with code and analysis  
+├── gender_submission.csv     # Sample submission file (from Kaggle)  
+├── test.csv                  # Test dataset (from Kaggle)  
+├── train.csv                 # Training dataset (from Kaggle)  
 └── README.md                 # Project documentation
-
 
 ## 🔍 Workflow Overview
 
@@ -54,8 +51,6 @@ The pipeline includes the following steps:
    - Generating predictions on the test set.
    - Creating a submission file for Kaggle.
 
----
-
 ## 🧠 Machine Learning Models Used
 
 - **Logistic Regression**
@@ -66,8 +61,6 @@ The pipeline includes the following steps:
 
 Each model is trained and evaluated to compare performance on the dataset.
 
----
-
 ## 📈 Results
 
 - The project reports accuracy scores for all models.
@@ -75,8 +68,6 @@ Each model is trained and evaluated to compare performance on the dataset.
 - Final predictions are saved in `gender_submission.csv`.
 
 > **Note:** For detailed accuracy scores and confusion matrices, refer to the `Titanic.ipynb` notebook.
-
----
 
 ## 📦 Requirements
 
@@ -96,8 +87,6 @@ pip install -r requirements.txt
 
 (*You can also create a `requirements.txt` if you'd like — let me know if you want it generated.*)
 
----
-
 ## 🚀 How to Run
 
 1. Clone this repository:
@@ -113,26 +102,19 @@ pip install -r requirements.txt
 
 3. Run all cells step by step to see the complete analysis and predictions.
 
----
-
 ## 📚 References
 
-- [Kaggle Titanic Competition](https://www.kaggle.com/competitions/titanic)
+- [Kaggle Titanic Competition](https://www.kaggle.com/competitions/titanic)  
 - Scikit-learn Documentation: https://scikit-learn.org/
-
----
 
 ## 📬 Contact
 
 If you have any questions or suggestions, feel free to reach out via:
 - **GitHub**: [mahajialirezaei](https://github.com/mahajialirezaei)
 
----
-
 ## ⭐️ Acknowledgments
 
 Thanks to the open data provided by Kaggle and the open-source ML community for inspiring projects like this.
+```
 
-
----
-
+If you actually intended to use YAML front matter (for example on a Jekyll site), let me know and I’ll help you format it properly. Otherwise, removing the `---` is the correct fix. Want me to generate a `requirements.txt` too?
